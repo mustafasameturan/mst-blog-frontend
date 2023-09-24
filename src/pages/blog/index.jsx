@@ -1,4 +1,4 @@
-import {postsAll} from "~/fake-api/posts-all.js";
+import { postsAll } from "~/fake-api/posts-all.js";
 import PostCard from "~/components/post-card/index.jsx";
 import BlogHeader from "~/pages/blog/components/blog-header/index.jsx";
 import Subscribe from "~/pages/blog/components/subscribe/index.jsx";

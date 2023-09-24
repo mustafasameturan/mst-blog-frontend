@@ -1,16 +1,11 @@
-import { Logo } from "~/assets/svg";
+import StaticLogo from "~/components/logo/index.jsx";
 
 export default function Footer() {
     return (
         <div className="container mx-auto">
-        <div className="flex flex-col items-center justify-between border-t border-grey-lighter py-10 sm:flex-row sm:py-12">
+        <div className="flex flex-col items-center justify-between border-t border-grey-lighter py-6 sm:flex-row sm:py-8">
           <div className="mr-auto flex flex-col items-center sm:flex-row">
-            <a href="/" className="mr-auto sm:mr-6">
-              <img src={Logo} alt="logo" />
-            </a>
-            <p className="pt-5 font-body font-light text-primary dark:text-white sm:pt-0">
-              ©2020 John Doe.
-            </p>
+            <StaticLogo />
           </div>
           <div className="mr-auto flex items-center pt-5 sm:mr-0 sm:pt-0">
             <a href="https://github.com/ " target="_blank">

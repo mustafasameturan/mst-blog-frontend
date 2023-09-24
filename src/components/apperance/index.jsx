@@ -1,14 +1,16 @@
 import classNames from "classnames";
-import { useEffect } from "react";
+import {useEffect} from "react";
 import useColorScheme from "~/hooks/use-color-scheme";
-import { setTheme } from "~/stores/app/actions";
-import { useTheme } from "~/stores/app/hooks";
-import { apperance, getApperanceIcon } from "~/utils/consts/apperance";
+import {setLanguage, setTheme} from "~/stores/app/actions";
+import {useLanguage, useTheme} from "~/stores/app/hooks";
+import {apperance, getApperanceIcon, getLanguageIcon, getLanguageKey} from "~/utils/consts/apperance";
+import {i18n} from "~/utils/language.js";
 
 export default function Apperance(){
 
     const theme = useTheme();
     const { colorScheme } = useColorScheme();
+    const language = useLanguage();
 
     useEffect(() => {
       if(theme === 'default'){
@@ -19,16 +21,28 @@ export default function Apperance(){
     }, [theme, colorScheme])
 
     return (
-        <i 
-            className={classNames(
-            "bx cursor-pointer text-3xl text-primary dark:text-white transition-all duration-500", getApperanceIcon(theme, colorScheme)
-            )} 
-            onClick={() => { 
-            theme === apperance.light
-                ? setTheme(apperance.dark)
-                : setTheme(apperance.light)                      
-            }}
-        >
-        </i>
+        <div className="flex gap-2 items-center">
+            <i
+                className={classNames(
+                "bx cursor-pointer text-3xl text-primary dark:text-white transition-all duration-500", getApperanceIcon(theme, colorScheme)
+                )}
+                onClick={() => {
+                theme === apperance.light
+                    ? setTheme(apperance.dark)
+                    : setTheme(apperance.light)
+                }}
+            >
+            </i>
+            <img
+                className={classNames("cursor-pointer text-3xl text-primary dark:text-white transition-all duration-500")}
+                src={getLanguageIcon(language)}
+                width={30}
+                height={30}
+                onClick={() => {
+                    setLanguage(getLanguageKey(i18n.language));
+                    i18n.changeLanguage(getLanguageKey(i18n.language));
+                }}
+            />
+        </div>
     )
 }

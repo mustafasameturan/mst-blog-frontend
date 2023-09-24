@@ -1,10 +1,8 @@
-import { Arrow_Right, Chevron_Right } from "~/assets/img";
-
 export default function Projects() {
   return (
     <div className="pb-16 lg:pb-20">
       <div className="flex items-center pb-6">
-        <img src={Arrow_Right} alt="icon story" />
+        <img src="/img/arrow-right.png" alt="icon story" />
         <h3 className="ml-3 font-body text-2xl font-semibold text-primary dark:text-white">
           My Projects
         </h3>
@@ -23,7 +21,7 @@ export default function Projects() {
             </p>
           </span>
           <span className="w-1/10">
-            <img src={Chevron_Right} className="mx-auto" alt="chevron right" />
+            <img src="/img/chevron-right.png" className="mx-auto" alt="chevron right" />
           </span>
         </a>
 
@@ -40,7 +38,7 @@ export default function Projects() {
             </p>
           </span>
           <span className="w-1/10">
-            <img src={Chevron_Right} className="mx-auto" alt="chevron right" />
+            <img src="/img/chevron-right.png" className="mx-auto" alt="chevron right" />
           </span>
         </a>
 
@@ -57,7 +55,7 @@ export default function Projects() {
             </p>
           </span>
           <span className="w-1/10">
-            <img src={Chevron_Right} className="mx-auto" alt="chevron right" />
+            <img src="/img/chevron-right.png" className="mx-auto" alt="chevron right" />
           </span>
         </a>
 
@@ -74,7 +72,7 @@ export default function Projects() {
             </p>
           </span>
           <span className="w-1/10">
-            <img src={Chevron_Right} className="mx-auto" alt="chevron right" />
+            <img src="/img/chevron-right.png" className="mx-auto" alt="chevron right" />
           </span>
         </a>
       </div>

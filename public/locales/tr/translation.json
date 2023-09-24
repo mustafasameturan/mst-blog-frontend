@@ -1,0 +1,13 @@
+{
+    "navbar": {
+        "home": "Anasayfa",
+        "blog": "Blog",
+        "uses": "Kullandıklarım",
+        "contact": "İletişim"
+    },
+    "home": {
+        "title": "Merhaba, Ben Mustafa Samet",
+        "subtitle": "Yazılım geliştirme konusunda tutkuluyum, hayallerimi kodla gerçeğe dönüştürüyorum.",
+        "button": "Merhaba De!"
+    }
+}

@@ -1,11 +1,9 @@
-import { Icon_Story } from "~/assets/img";
-
 export default function Story() {
     
   return (
     <div className="border-b border-grey-lighter py-16 lg:py-20">
       <div className="flex items-center pb-6">
-        <img src={Icon_Story} alt="icon story" />
+        <img src="/img/icon-story.png" alt="icon story" />
         <h3 className="ml-3 font-body text-2xl font-semibold text-primary dark:text-white">
           My Story
         </h3>

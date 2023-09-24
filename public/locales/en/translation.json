@@ -1,0 +1,13 @@
+{
+    "navbar": {
+        "home": "Home",
+        "blog": "Blog",
+        "uses": "Uses",
+        "contact": "Contact"
+    },
+    "home": {
+        "title": "Hi, I'm Mustafa Samet",
+        "subtitle": "I am passionate about software development, turning my dreams into reality with codes.",
+        "button": "Say Hi!"
+    }
+}

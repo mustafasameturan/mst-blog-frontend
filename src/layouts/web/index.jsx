@@ -1,6 +1,6 @@
 import { useRef } from "react"
-import Sidebar from "./components/sidebar";
-import SidebarMobile from "./components/sidebar-mobile";
+import Sidebar from "./components/navbar";
+import SidebarMobile from "./components/navbar-mobile";
 import { Outlet } from "react-router-dom";
 import Footer from "~/layouts/web/components/footer/index.jsx";
 
