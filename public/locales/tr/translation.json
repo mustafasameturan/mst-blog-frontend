@@ -9,5 +9,14 @@
         "title": "Merhaba, Ben Mustafa Samet",
         "subtitle": "Yazılım geliştirme konusunda tutkuluyum, hayallerimi kodla gerçeğe dönüştürüyorum.",
         "button": "Merhaba De!"
+    },
+    "projects": {
+        "title": "Projelerim",
+        "not_found": "Proje Bulunamadı"
+    },
+    "story": {
+        "title": "Hakkımda",
+        "paragraph_one": "Merhaba teknoloji meraklıları! Ben full stack geliştirme konusunda uzmanlaşma hedefi olan bir yazılım geliştiriciyim. Hem ön tarafta kullanıcı dostu arayüzler oluşturabilirim hem de arkasında veritabanları ve sunucular yönetebilirim. HTML, CSS ve JavaScript, ReactJS gibi teknolojilerle birlikte, C#, .NET Core gibi çeşitli programlama dillerini & teknolojilerini kullanarak, projelerin her iki tarafında da etkileyici ve işlevsel çözümler üretmeyi amaçlıyorum.",
+        "paragraph_two": "Bu platform, bilgi paylaşımını ve etkileşimi teşvik eden dinamik bir platformdur. Bu platformu kurmamdaki en büyük amaç, teknoloji alanında öğrendiğim & bildiğim bilgileri sizlerle paylaşmak. Ayrıca, her yazıda bilgi, ilham ve eğlenceyi bir araya getirerek, okuyucularımı düşündüren, öğrenmeye ve paylaşmaya teşvik eden bir ortam sunmak da en büyük hayallerimden bir tanesi. Keyifli vakitler!"
     }
 }

@@ -8,15 +8,11 @@ export default function Footer() {
             <StaticLogo />
           </div>
           <div className="mr-auto flex items-center pt-5 sm:mr-0 sm:pt-0">
-            <a href="https://github.com/ " target="_blank">
+            <a href="https://github.com/mustafasameturan" target="_blank" rel="noreferrer">
               <i className="text-4xl text-primary dark:text-white pl-5 hover:text-secondary dark:hover:text-secondary transition-colors bx bxl-github"></i>
             </a>
 
-            <a href="https://codepen.io/ " target="_blank">
-              <i className="text-4xl text-primary dark:text-white pl-5 hover:text-secondary dark:hover:text-secondary transition-colors bx bxl-codepen"></i>
-            </a>
-
-            <a href="https://www.linkedin.com/ " target="_blank">
+            <a href="https://www.linkedin.com/in/mustafasameturan" target="_blank" rel="noreferrer">
               <i className="text-4xl text-primary dark:text-white pl-5 hover:text-secondary dark:hover:text-secondary transition-colors bx bxl-linkedin"></i>
             </a>
           </div>

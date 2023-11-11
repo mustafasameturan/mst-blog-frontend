@@ -4,18 +4,12 @@ import Posts from "~/pages/home/sections/posts/index.jsx";
 import Projects from "~/pages/home/sections/projects/index.jsx";
 
 export default function Home() {
-
   return (
-    <>
-        <div>
-          <div className="container mx-auto">
-            <Header />
-            <Story />
-            <Posts />
-
-            <Projects />
-          </div>
-        </div>
-    </>
+      <div className="container mx-auto">
+        <Header/>
+        <Story/>
+        <Posts/>
+        <Projects/>
+      </div>
   );
 }
