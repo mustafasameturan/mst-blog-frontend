@@ -13,7 +13,7 @@ export default function Post() {
         {type: "header", text: "The Beginning"},
         {type: "paragraph", text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Enim lobortis scelerisque fermentum dui faucibus in ornare quam viverra. Augue ut lectus arcu bibendum at varius vel. Lacus viverra vitae congue eu consequat ac felis."},
         {type: "paragraph", text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Enim lobortis scelerisque fermentum dui faucibus in ornare quam viverra. Augue ut lectus arcu bibendum at varius vel. Lacus viverra vitae congue eu consequat ac felis."},
-        {type: "blocakquote", text: "Note: Some of the earlier articles may be amateur and have information that I wouldn’t necessarily put into an article on the subject if I wrote it today."},
+        {type: "blockquote", text: "Note: Some of the earlier articles may be amateur and have information that I wouldn’t necessarily put into an article on the subject if I wrote it today."},
         {type: "header", text: "The End"},
         {type: "paragraph", text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Enim lobortis scelerisque fermentum dui faucibus in ornare quam viverra. Augue ut lectus arcu bibendum at varius vel. Lacus viverra vitae congue eu consequat ac felis."},
         {type: "code", text: `function example() {

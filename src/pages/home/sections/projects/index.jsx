@@ -1,4 +1,17 @@
+import {GetProjects} from "~/services/ui/project-service.js";
+import {useEffect} from "react";
+
 export default function Projects() {
+
+  const getAllProjects = async () => {
+    const result = await GetProjects();
+    console.log(result)
+  }
+
+  useEffect(() => {
+    getAllProjects();
+  }, []);
+
   return (
     <div className="pb-16 lg:pb-20">
       <div className="flex items-center pb-6">
