@@ -1,33 +1,48 @@
-import {useState} from "react";
+import {useTranslation} from "react-i18next";
+import {Form, Formik} from "formik";
+import {subscribeSchema} from "~/validations/index.js";
+import Input from "~/components/input/index.jsx";
+import Button from "~/components/button/index.jsx";
+import {AddSubscribe} from "~/services/ui/subscribe-service.js";
+import {modal} from "~/stores/modal/actions.js";
 
 export default function Subscribe() {
 
-    const [email, setEmail] = useState("");
+    const { t } = useTranslation();
 
-    const submitHandle = (e) => {
-        e.preventDefault();
+    const submitHandle = async (values, { resetForm }) => {
 
-        console.log(email);
+        const result = await AddSubscribe(values.email);
+
+        if(result.statusCode === 200) {
+            modal.append("success.dynamic", t("custom_success_messages.subscribe_success_message"))
+            resetForm();
+        }
     }
 
     return (
-        <form
+        <Formik
+            validationSchema={subscribeSchema}
+            initialValues={{
+                email: ''
+            }}
             onSubmit={submitHandle}
-            className="flex flex-col py-12 sm:flex-row"
         >
-            <input
-                type="email"
-                id="subscribe"
-                placeholder="Drop that email here…"
-                className="w-full border border-primary bg-grey-lightest px-5 py-4 font-body font-light text-primary placeholder-primary transition-colors focus:border-secondary focus:outline-none focus:ring-2 focus:ring-secondary dark:border-secondary sm:w-1/2"
-                onChange={(e) => setEmail(e.target.value)}
-            />
-            <button
-                type="submit"
-                className="mt-5 bg-secondary px-10 py-4 font-body text-xl font-semibold text-white hover:bg-green sm:mt-0 md:text-2xl"
-            >
-                Subscribe
-            </button>
-        </form>
+            <Form className="flex flex-col py-12 sm:flex-row">
+                <Input
+                    name="email"
+                    type="email"
+                    variant="large"
+                    placeholder={t("blog.enter_email")}
+                />
+                <Button
+                    variant="primary-small"
+                    type="submit"
+                    as="button"
+                >
+                    {t("blog.subscribe")}
+                </Button>
+            </Form>
+        </Formik>
     );
 }

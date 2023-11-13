@@ -18,6 +18,7 @@ export const ApiRequest = (endpoint, method, payload) => {
         });
 };
 
+
 ApiRequest.propTypes = {
     endpoint: PropTypes.string,
     method: PropTypes.string,

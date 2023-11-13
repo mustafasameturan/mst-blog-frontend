@@ -5,6 +5,24 @@
         "uses": "Uses",
         "contact": "Contact"
     },
+    "pagination": {
+        "next": "Next",
+        "back": "Back"
+    },
+    "modal": {
+        "okey": "Okey",
+        "error": {
+            "title": "Error",
+            "message": "An unexcepted error occured!"
+        },
+        "success": {
+            "title": "Successful",
+            "message": "The operation was successful!"
+        }
+    },
+    "custom_success_messages": {
+        "subscribe_success_message": "You have successfully subscribed to the newsletter! You will be notified when a new article is published."
+    },
     "home": {
         "title": "Hi, I'm Mustafa Samet",
         "subtitle": "I am passionate about software development, turning my dreams into reality with codes.",
@@ -18,5 +36,25 @@
         "title": "About Me",
         "paragraph_one": "Hello tech enthusiasts! I'm a software developer with the goal of specializing in full stack development. I can build user-friendly interfaces on the front end and manage databases and servers behind it. Using various programming languages & technologies such as C#, .NET Core along with HTML, CSS and JavaScript, ReactJS, I aim to create impressive and functional solutions on both sides of projects.",
         "paragraph_two": "This is a dynamic platform that encourages knowledge sharing and interaction. My biggest goal in building this platform is to share with you the knowledge I have learned & know in the field of technology. It is also one of my biggest dreams to provide an environment that encourages my readers to think, learn and share by combining information, inspiration and entertainment in every post. Have a great time!"
+    },
+    "blog": {
+        "title": "/blog",
+        "description": "Articles, tutorials and everything else.\n Subscribe for updates as they happen!",
+        "enter_email": "Drop that email here...",
+        "subscribe": "Subscribe"
+    },
+    "uses": {
+        "title": "/uses",
+        "sub_title": "Equipment + Workspace",
+        "computer_title": "Computer",
+        "computer_description": "I use a MacBook Air 2020 (M1/16gb/256gb) for everything (work + personal).",
+        "screen_title": "Monitor",
+        "screen_description": "I view my code on a Samsung CF390 23.5\" monitor.",
+        "chair_title": "Chair",
+        "chair_description": "I sit on a Hawk Fab v6 chair.",
+        "keyboard_title": "Keyboard",
+        "keyboard_description": "I code using the Logitech MX Keys.",
+        "mouse_title": "Mouse",
+        "mouse_description": "I click with the Logitech M720 Triathlon."
     }
 }

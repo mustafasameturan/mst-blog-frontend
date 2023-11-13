@@ -5,6 +5,24 @@
         "uses": "Kullandıklarım",
         "contact": "İletişim"
     },
+    "modal": {
+        "okey": "Tamam",
+        "error": {
+            "title": "Hata",
+            "message": "Beklenmeyen bir hata oluştu!"
+        },
+        "success": {
+            "title": "Başarılı",
+            "message": "İşlem başarıyla gerçekleşti!"
+        }
+    },
+    "custom_success_messages": {
+        "subscribe_success_message": "Bültene başarıyla abone oldundu! Yeni bir yazı yayınlandığında haberdar edileceksiniz."
+    },
+    "pagination": {
+        "next": "İleri",
+        "back": "Geri"
+    },
     "home": {
         "title": "Merhaba, Ben Mustafa Samet",
         "subtitle": "Yazılım geliştirme konusunda tutkuluyum, hayallerimi kodla gerçeğe dönüştürüyorum.",
@@ -18,5 +36,25 @@
         "title": "Hakkımda",
         "paragraph_one": "Merhaba teknoloji meraklıları! Ben full stack geliştirme konusunda uzmanlaşma hedefi olan bir yazılım geliştiriciyim. Hem ön tarafta kullanıcı dostu arayüzler oluşturabilirim hem de arkasında veritabanları ve sunucular yönetebilirim. HTML, CSS ve JavaScript, ReactJS gibi teknolojilerle birlikte, C#, .NET Core gibi çeşitli programlama dillerini & teknolojilerini kullanarak, projelerin her iki tarafında da etkileyici ve işlevsel çözümler üretmeyi amaçlıyorum.",
         "paragraph_two": "Bu platform, bilgi paylaşımını ve etkileşimi teşvik eden dinamik bir platformdur. Bu platformu kurmamdaki en büyük amaç, teknoloji alanında öğrendiğim & bildiğim bilgileri sizlerle paylaşmak. Ayrıca, her yazıda bilgi, ilham ve eğlenceyi bir araya getirerek, okuyucularımı düşündüren, öğrenmeye ve paylaşmaya teşvik eden bir ortam sunmak da en büyük hayallerimden bir tanesi. Keyifli vakitler!"
+    },
+    "blog": {
+        "title": "/blog",
+        "description": "Makaleler, eğitimler ve daha fazlası.\n Gelişmelerden haberdar olmak için abone ol!",
+        "enter_email": "E-postanı buraya bırak...",
+        "subscribe": "Abone Ol"
+    },
+    "uses": {
+        "title": "/kullandıklarım",
+        "sub_title": "Ekipman + Çalışma Alanı",
+        "computer_title": "Bilgisayar",
+        "computer_description": "Her şey için (iş + kişisel) Macbook Air 2020 (M1/16gb/256gb) kullanıyorum.",
+        "screen_title": "Monitör",
+        "screen_description": "Samsung CF390 23.5\" ile kodlarımı görüntülüyorum.",
+        "chair_title": "Sandalye",
+        "chair_description": "Hawk Fab v6'ya oturuyorum.",
+        "keyboard_title": "Klavye",
+        "keyboard_description": "Logitech MX Keys ile kod yazıyorum.",
+        "mouse_title": "Fare",
+        "mouse_description": "Logitech M720 Triathlon ile tıklıyorum."
     }
 }
