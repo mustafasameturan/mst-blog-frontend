@@ -25,7 +25,7 @@ export default function Projects() {
   return (
     <div className="pb-16 lg:pb-20">
       <div className="flex items-center pb-6">
-        <img src="/img/arrow-right.png" alt="icon story" />
+        <img src="/svg/arrow-right.svg" alt="arrow" width={12} height={21} />
         <h3 className="ml-3 font-body text-2xl font-semibold text-primary dark:text-white">
           {t('projects.title')}
         </h3>
@@ -44,17 +44,17 @@ export default function Projects() {
                               target="_blank"
                               rel="noreferrer"
                           >
-                      <span className="w-9/10 pr-8">
-                        <h4 className="font-body text-lg font-semibold text-primary dark:text-white">
-                          {project.name}
-                        </h4>
-                        <p className="font-body font-light text-primary dark:text-white">
-                          {project.description}
-                        </p>
-                      </span>
+                              <span className="w-9/10 pr-8">
+                                <h4 className="font-body text-lg font-semibold text-primary dark:text-white">
+                                  {project.name}
+                                </h4>
+                                <p className="font-body font-light text-primary dark:text-white">
+                                  {project.description}
+                                </p>
+                              </span>
                               <span className="w-1/10">
-                        <img src="/img/chevron-right.png" className="mx-auto" alt="chevron right" />
-                      </span>
+                                <img src="/svg/chevron-right.svg" className="mx-auto" alt="chevron right" width={12} height={21} />
+                              </span>
                           </a>
                       ))
                   )}

@@ -1,11 +1,13 @@
 import UsesListItem from "~/pages/uses/components/uses-list-item/index.jsx";
 import {useTranslation} from "react-i18next";
+import {useMemo} from "react";
+import {Helmet} from "react-helmet";
 
 export default function Uses() {
 
     const { t } = useTranslation();
 
-    const uses= [
+    const usesArr= [
         {
             title: t ("uses.computer_title"),
             // eslint-disable-next-line react/no-unescaped-entities
@@ -36,13 +38,18 @@ export default function Uses() {
             children: t("uses.mouse_description"),
             url: "https://www.logitech.com/tr-tr/products/mice/m720-triathlon.910-004791.html"
         }
-    ]
+    ];
+
+    const uses = useMemo(() => usesArr, []);
 
     return (
         <div className="container mx-auto">
             <div className="py-16 lg:py-20">
+                <Helmet>
+                    <title>{t("uses.title")}</title>
+                </Helmet>
 
-                <img src="/img/icon-uses.png" alt="icon uses"/>
+                <img src="/svg/icon-uses.svg" alt="icon uses" width={60} height={31}/>
                 <h1 className="pt-5 font-body text-4xl font-semibold text-primary dark:text-white md:text-5xl lg:text-6xl">
                     {t("uses.title")}
                 </h1>

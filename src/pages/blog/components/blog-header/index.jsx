@@ -7,7 +7,7 @@ export default function BlogHeader(){
     return (
         <>
             <div>
-                <img src="/img/icon-blog.png" alt="icon envelope" />
+                <img src="/svg/icon-blog.svg" alt="icon envelope" width={54} height={36} />
             </div>
 
             <h1

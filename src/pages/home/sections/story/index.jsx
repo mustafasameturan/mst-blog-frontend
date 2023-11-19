@@ -7,7 +7,7 @@ export default function Story() {
   return (
     <div className="border-b border-grey-lighter py-16 lg:py-20">
       <div className="flex items-center pb-6">
-        <img src="/img/icon-story.png" alt="icon story" />
+        <img src="/svg/icon-story.svg" alt="icon story" width={21} height={29}/>
         <h3 className="ml-3 font-body text-2xl font-semibold text-primary dark:text-white">
           {t("story.title")}
         </h3>

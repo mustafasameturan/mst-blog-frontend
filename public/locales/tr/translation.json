@@ -56,5 +56,8 @@
         "keyboard_description": "Logitech MX Keys ile kod yazıyorum.",
         "mouse_title": "Fare",
         "mouse_description": "Logitech M720 Triathlon ile tıklıyorum."
+    },
+    "contact": {
+        "title": "/iletişim"
     }
 }

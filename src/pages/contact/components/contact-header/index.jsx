@@ -2,7 +2,7 @@ export default function ContactHeader() {
     return(
         <>
             <div>
-                <img src="/img/icon-contact.png" alt="icon envelope" />
+                <img src="/svg/icon-contact.svg" alt="contact" width={48} height={36} />
             </div>
             <h1
                 className="pt-5 font-body text-4xl font-semibold text-primary dark:text-white md:text-5xl lg:text-6xl"

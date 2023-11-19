@@ -56,5 +56,8 @@
         "keyboard_description": "I code using the Logitech MX Keys.",
         "mouse_title": "Mouse",
         "mouse_description": "I click with the Logitech M720 Triathlon."
+    },
+    "contact": {
+        "title": "/iletişim"
     }
 }

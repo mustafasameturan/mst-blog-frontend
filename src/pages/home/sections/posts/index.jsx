@@ -6,7 +6,7 @@ export default function Posts() {
   return (
     <div className="py-16 lg:py-20">
       <div className="flex items-center pb-6">
-        <img src="/img/icon-story.png" alt="icon story" />
+        <img src="/svg/icon-story.svg" alt="icon story" width={21} height={29} />
         <h3 className="ml-3 font-body text-2xl font-semibold text-primary dark:text-white">
           My Posts
         </h3>
@@ -15,7 +15,7 @@ export default function Posts() {
           className="flex items-center pl-10 font-body italic text-green transition-colors hover:text-secondary dark:text-green-light dark:hover:text-secondary"
         >
           All posts
-          <img src="/img/arrow-right.png" className="ml-3" alt="arrow right" />
+          <img src="/svg/arrow-right.svg" className="ml-3" alt="arrow right" width={16} height={10} />
         </a>
       </div>
       <div className="pt-8">
