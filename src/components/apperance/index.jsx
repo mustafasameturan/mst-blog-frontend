@@ -1,6 +1,6 @@
 import classNames from "classnames";
 import {useEffect} from "react";
-import useColorScheme from "~/hooks/use-color-scheme";
+import useColorScheme from "~/hooks/tool/use-color-scheme.js";
 import {setLanguage, setTheme} from "~/stores/app/actions";
 import {useLanguage, useTheme} from "~/stores/app/hooks";
 import {apperance, getApperanceIcon, getLanguageIcon, getLanguageKey} from "~/utils/consts/apperance";
@@ -42,6 +42,7 @@ export default function Apperance(){
                     setLanguage(getLanguageKey(i18n.language));
                     i18n.changeLanguage(getLanguageKey(i18n.language));
                 }}
+                alt="flag"
             />
         </div>
     )

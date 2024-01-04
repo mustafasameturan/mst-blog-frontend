@@ -6,6 +6,8 @@ import Uses from "~/pages/uses/index.jsx";
 import Contact from "~/pages/contact/index.jsx";
 import Post from "~/pages/post/index.jsx";
 import AdminLogin from "~/pages/auth/admin-login/index.jsx";
+import AdminLayout from "~/layouts/admin/index.jsx";
+import CreatePost from "~/pages/create-post/index.jsx";
 
 const routes = createBrowserRouter([
     {
@@ -33,12 +35,22 @@ const routes = createBrowserRouter([
                 element: <Contact />
             },
             {
-                path: 'post',
+                path: 'post/:postId',
                 element: <Post />
+            }
+        ]
+    },
+    {
+        path: '/admin',
+        element: <AdminLayout />,
+        children: [
+            {
+                index: true,
+                element: <AdminLogin />
             },
             {
-                path: 'admin-login',
-                element: <AdminLogin />
+                path: "create-post",
+                element: <CreatePost />
             }
         ]
     }

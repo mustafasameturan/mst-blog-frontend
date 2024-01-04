@@ -1,25 +1,23 @@
 import {GetProjects} from "~/services/ui/project-service.js";
-import {Suspense, useEffect, useState} from "react";
+import {useEffect, useState} from "react";
 import {useTranslation} from "react-i18next";
 import Loading from "~/components/loading/index.jsx";
+import NotFound from "~/components/not-found/index.jsx";
 
 export default function Projects() {
 
   const { t } = useTranslation();
-  const [projects, setProjects] = useState();
+  const [projects, setProjects] = useState([]);
   const [loading, setLoading] = useState(true);
 
-  const getAllProjects = async () => {
-    const result = await GetProjects();
-
-    if(result.statusCode === 200) {
-      setLoading(loading => false);
-      setProjects(projects => result.data);
-    }
-  }
-
   useEffect(() => {
-    getAllProjects();
+    GetProjects()
+        .then(result => {
+            if(result.statusCode === 200){
+              setProjects(projects => result.data);
+              setLoading(loading => false);
+            }
+        })
   }, []);
 
   return (
@@ -59,11 +57,7 @@ export default function Projects() {
                       ))
                   )}
 
-                  {projects?.length === 0 && (
-                      <h4 className="flex justify-center font-body text-md text-primary dark:text-white">
-                          {t('projects.not_found')}
-                      </h4>
-                  )}
+                  {projects?.length === 0 && <NotFound text={t('projects.not_found')} />}
               </>
           )}
       </div>
