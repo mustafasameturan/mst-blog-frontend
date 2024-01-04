@@ -32,5 +32,5 @@ Input.propTypes = {
 Input.defaultProps = {
     as: 'input',
     variant: 'normal',
-    isValidation: false
+    isValidation: true
 }

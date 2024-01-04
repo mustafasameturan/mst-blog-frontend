@@ -17,7 +17,6 @@ export default function Modals() {
                             className="bg-white dark:bg-primary min-w-full md:min-w-[400px] max-w-full grid rounded-md overflow-hidden shadow-lg last:block"
                         >
                             <current.element
-                                key={modalData.name}
                                 destroy={modal.destroy}
                                 destroyAll={modal.destroyAll}
                                 modalData={modalData?.data}

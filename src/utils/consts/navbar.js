@@ -16,3 +16,10 @@ export const navbarMenu = (t) => [
         "title": t('navbar.contact')
     }
 ]
+
+export const navbarAdminMenu = () => [
+    {
+        "path": "/admin/create-post",
+        "title": "Gönderi Oluştur"
+    }
+]

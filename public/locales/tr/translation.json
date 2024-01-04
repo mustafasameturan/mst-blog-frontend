@@ -16,8 +16,27 @@
             "message": "İşlem başarıyla gerçekleşti!"
         }
     },
+    "form" : {
+        "name": {
+            "label": "Adın",
+            "placeholder": "Sana nasıl hitap etmeliyim?"
+        },
+        "email": {
+            "label": "E-posta Adresin",
+            "placeholder": "E-postanı buraya bırak..."
+        },
+        "message": {
+            "label": "Mesajın",
+            "placeholder": "Bana duymam gerektiğini düşündüğün her şeyi söyle..."
+        }
+    },
     "custom_success_messages": {
-        "subscribe_success_message": "Bültene başarıyla abone oldundu! Yeni bir yazı yayınlandığında haberdar edileceksiniz."
+        "subscribe_success_message": "Bültene başarıyla abone oldundu! Yeni bir yazı yayınlandığında haberdar edileceksiniz.",
+        "contact_success_message": "Mesajınız başarıyla gönderildi!",
+        "post_success_message": "Gönderi başarıyla oluşturuldu!"
+    },
+    "custom_error_messages": {
+        "create_post_error_message": "Gönderi içeriği formatında sorun var. Lütfen kontrol ediniz!"
     },
     "pagination": {
         "next": "İleri",
@@ -28,9 +47,15 @@
         "subtitle": "Yazılım geliştirme konusunda tutkuluyum, hayallerimi kodla gerçeğe dönüştürüyorum.",
         "button": "Merhaba De!"
     },
+    "top_posts": {
+        "my_posts": "Gönderilerim",
+        "all_posts": "Tüm gönderiler",
+        "min_read": "dakika okuma",
+        "not_found": "Hiç Gönderi Bulunamadı"
+    },
     "projects": {
         "title": "Projelerim",
-        "not_found": "Proje Bulunamadı"
+        "not_found": "Hiç Proje Bulunamadı"
     },
     "story": {
         "title": "Hakkımda",
@@ -39,9 +64,8 @@
     },
     "blog": {
         "title": "/blog",
-        "description": "Makaleler, eğitimler ve daha fazlası.\n Gelişmelerden haberdar olmak için abone ol!",
-        "enter_email": "E-postanı buraya bırak...",
-        "subscribe": "Abone Ol"
+        "description": "Makaleler, eğitimler ve daha fazlası.\n Gelişmelerden haberdar olmak için abone olun!",
+        "subscribe": "Abone Olun"
     },
     "uses": {
         "title": "/kullandıklarım",
@@ -58,6 +82,19 @@
         "mouse_description": "Logitech M720 Triathlon ile tıklıyorum."
     },
     "contact": {
-        "title": "/iletişim"
+        "title": "/iletişim",
+        "description": "Bir sorunuz ya da öneriniz mi var, yoksa sadece merhaba mı demek istiyorsunuz? Buyurun. Ne yapacağınızı biliyorsunuz.",
+        "send_message": "Mesaj Gönderin"
+    },
+    "create_post": {
+        "title": "Gönderi Oluştur",
+        "description": "İşte teknik dünyada öne çıkan blogunuz için birinci sınıf içerik oluşturmanın zamanı geldi!",
+        "post_title": "Gönderi Başlığı",
+        "enter_post_title": "Gönderi başlığı girin...",
+        "post_category": "Gönderi Kategorisi",
+        "choose_post_category": "Gönderi kategorisi seçin...",
+        "post_content": "Gönderi İçeriği",
+        "enter_post_content": "Gönderi içeriği girin...",
+        "create": "Oluştur"
     }
 }

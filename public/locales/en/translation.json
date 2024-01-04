@@ -20,17 +20,42 @@
             "message": "The operation was successful!"
         }
     },
+    "form" : {
+        "name": {
+            "label": "Your Name",
+            "placeholder": "What should I call you?"
+        },
+        "email": {
+            "label": "Your Email",
+            "placeholder": "Drop that email here..."
+        },
+        "message": {
+            "label": "Your Message",
+            "placeholder": "Tell me all the things that you think I need to hear..."
+        }
+    },
     "custom_success_messages": {
-        "subscribe_success_message": "You have successfully subscribed to the newsletter! You will be notified when a new article is published."
+        "subscribe_success_message": "You have successfully subscribed to the newsletter! You will be notified when a new article is published.",
+        "contact_success_message": "Your message was sent successfully!",
+        "post_success_message": "Post created successfully!"
+    },
+    "custom_error_messages": {
+        "create_post_error_message": "There is a problem with post content format. Please check it!"
     },
     "home": {
         "title": "Hi, I'm Mustafa Samet",
         "subtitle": "I am passionate about software development, turning my dreams into reality with codes.",
         "button": "Say Hi!"
     },
+    "top_posts": {
+        "my_posts": "My Posts",
+        "all_posts": "All posts",
+        "min_read": "min read",
+        "not_found": "No Posts Found"
+    },
     "projects": {
         "title": "My Projects",
-        "not_found": "Project Are Not Found"
+        "not_found": "No Projects Found"
     },
     "story": {
         "title": "About Me",
@@ -40,7 +65,6 @@
     "blog": {
         "title": "/blog",
         "description": "Articles, tutorials and everything else.\n Subscribe for updates as they happen!",
-        "enter_email": "Drop that email here...",
         "subscribe": "Subscribe"
     },
     "uses": {
@@ -58,6 +82,19 @@
         "mouse_description": "I click with the Logitech M720 Triathlon."
     },
     "contact": {
-        "title": "/iletişim"
+        "title": "/iletişim",
+        "description": "Got a question or proposal, or just want to say hello? Go ahead. You know what to do.",
+        "send_message": "Send Message"
+    },
+    "create_post": {
+        "title": "Create Post",
+        "description": "It's time to create top-notch content for your blog that stands out in the technical world!",
+        "post_title": "Post Title",
+        "enter_post_title": "Enter post title...",
+        "post_category": "Post Category",
+        "choose_post_category": "Choose post category...",
+        "post_content": "Post Content",
+        "enter_post_content": "Enter post content...",
+        "create": "Create"
     }
 }

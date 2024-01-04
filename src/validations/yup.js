@@ -10,6 +10,9 @@ Yup.setLocale({
         max: 'Bu alan maksimum ${max} karakter olmalıdır.',
         url: 'Geçerli bir URL girmelisiniz.'
     },
+    array: {
+        min: 'Minimum ${min} seçim  yapılmalıdır.'
+    },
     boolean: {
         oneOf: 'Bu alanı işaretlemeniz gerekiyor.'
     }

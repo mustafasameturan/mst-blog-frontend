@@ -20,12 +20,12 @@ export default function Header() {
       <p className="pt-3 font-body text-xl font-light text-primary dark:text-white">
             {t('home.subtitle')}
       </p>
-      <a
-        href="/"
+      <button
+        type="button"
         className="mt-12 block bg-secondary px-10 py-4 text-center font-body text-xl font-semibold text-white transition-colors hover:bg-green sm:inline-block sm:text-left sm:text-2xl"
       >
           {t('home.button')}
-      </a>
+      </button>
     </div>
   );
 }

@@ -1,7 +1,7 @@
-import StaticErrorModal from "~/modals/error/dynamic/index.jsx";
+import StaticErrorModal from "~/modals/error/static/index.jsx";
 import DynamicErrorModal from "~/modals/error/dynamic/index.jsx";
 import StaticSuccessModal from "~/modals/success/static/index.jsx";
-import DynamicSubscribeModal from "~/modals/success/dynamic/index.jsx";
+import DynamicSuccessModal from "~/modals/success/dynamic/index.jsx";
 
 export const modals = [
     {
@@ -18,6 +18,6 @@ export const modals = [
     },
     {
         name: 'success.dynamic',
-        element: DynamicSubscribeModal
+        element: DynamicSuccessModal
     }
 ]

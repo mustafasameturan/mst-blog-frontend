@@ -1,4 +1,9 @@
+import {useTranslation} from "react-i18next";
+
 export default function ContactHeader() {
+
+    const { t } = useTranslation();
+
     return(
         <>
             <div>
@@ -7,11 +12,11 @@ export default function ContactHeader() {
             <h1
                 className="pt-5 font-body text-4xl font-semibold text-primary dark:text-white md:text-5xl lg:text-6xl"
             >
-                Contact
+                {t("contact.title")}
             </h1>
-            <div className="pr-2 pt-3 sm:pt-0">
+            <div className="pr-2 pt-3 sm:pt-0 mt-2">
                 <p className="font-body text-xl font-light text-primary dark:text-white">
-                    Got a question or proposal, or just want to say hello? Go ahead. You know what to do.
+                    {t("contact.description")}
                 </p>
             </div>
         </>
