@@ -5,12 +5,14 @@ import {ErrorMessage, Field} from "formik";
 export default function Input({ label, name, as, variant, isValidation, ...props }) {
     return (
         <>
+            {/*w-full border border-primary bg-grey-lightest px-5 py-4 font-body font-light text-primary placeholder-primary transition-colors focus:border-secondary focus:outline-none focus:ring-2 focus:ring-secondary dark:border-secondary sm:w-1/2*/}
             {label && <div className="block pb-3 font-body font-medium text-primary dark:text-white">{label}</div>}
             <Field
                 as={as}
                 name={name}
-                className={classNames("w-full border border-primary bg-grey-lightest px-5 py-4 font-body font-light text-primary placeholder-primary transition-colors focus:border-secondary focus:outline-none focus:ring-2 focus:ring-secondary", {
-                    "" : variant === "normal",
+                className={classNames("w-full border border-primary bg-grey-lightest px-5 font-body font-light text-primary placeholder-primary transition-colors focus:border-secondary focus:outline-none focus:ring-2 focus:ring-secondary", {
+                    "py-3" : variant === "small",
+                    "py-4" : variant === "normal",
                     "dark:border-secondary sm:w-1/2" : variant === "large",
                 })}
                 {...props}
@@ -25,7 +27,7 @@ Input.propTypes = {
     name: PropTypes.string,
     props: PropTypes.object,
     as: PropTypes.oneOf(['input', 'textarea']),
-    variant: PropTypes.oneOf(['normal', 'large']),
+    variant: PropTypes.oneOf(['small', 'normal', 'large']),
     isValidation: PropTypes.bool
 }
 

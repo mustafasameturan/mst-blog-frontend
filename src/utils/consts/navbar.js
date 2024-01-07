@@ -15,11 +15,18 @@ export const navbarMenu = (t) => [
         "path": "/contact",
         "title": t('navbar.contact')
     }
-]
+];
 
-export const navbarAdminMenu = () => [
+export const navbarAdminLoginMenu = (t) => [
+    {
+        "path": "/admin",
+        "title": t('navbar_admin.login')
+    }
+];
+
+export const navbarAdminMenu = (t) => [
     {
         "path": "/admin/create-post",
-        "title": "Gönderi Oluştur"
+        "title": t('navbar_admin.create_post')
     }
-]
+];

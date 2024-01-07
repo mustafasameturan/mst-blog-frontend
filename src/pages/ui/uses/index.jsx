@@ -1,4 +1,4 @@
-import UsesListItem from "~/pages/uses/components/uses-list-item/index.jsx";
+import UsesListItem from "~/pages/ui/uses/components/uses-list-item/index.jsx";
 import {useTranslation} from "react-i18next";
 import {useMemo} from "react";
 import {Helmet} from "react-helmet";

@@ -1,6 +1,6 @@
 import axios from "axios"
 import PropTypes from "prop-types";
-import Blockquote from "~/pages/post/components/blokquote/index.jsx";
+import Blockquote from "~/pages/ui/post/components/blokquote/index.jsx";
 
 export const ApiRequest = (endpoint, method, payload) => {
     return axios({

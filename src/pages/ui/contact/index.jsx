@@ -1,5 +1,5 @@
-import ContactHeader from "~/pages/contact/components/contact-header/index.jsx";
-import ContactForm from "~/pages/contact/components/contact-form/index.jsx";
+import ContactHeader from "~/pages/ui/contact/components/contact-header/index.jsx";
+import ContactForm from "~/pages/ui/contact/components/contact-form/index.jsx";
 import {useTranslation} from "react-i18next";
 import {Helmet} from "react-helmet";
 

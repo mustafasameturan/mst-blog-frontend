@@ -1,8 +1,8 @@
-import BlogHeader from "~/pages/blog/components/blog-header/index.jsx";
-import Subscribe from "~/pages/blog/components/subscribe/index.jsx";
+import BlogHeader from "~/pages/ui/blog/components/blog-header/index.jsx";
+import Subscribe from "~/pages/ui/blog/components/subscribe/index.jsx";
 import {Helmet} from "react-helmet";
 import {useTranslation} from "react-i18next";
-import PostList from "~/pages/blog/components/post-list/index.jsx";
+import PostList from "~/pages/ui/blog/components/post-list/index.jsx";
 
 export default function Blog(){
 

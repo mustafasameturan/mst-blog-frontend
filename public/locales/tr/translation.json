@@ -5,6 +5,10 @@
         "uses": "Kullandıklarım",
         "contact": "İletişim"
     },
+    "navbar_admin": {
+        "login": "Giriş Yap",
+        "create_post": "Gönderi Oluştur"
+    },
     "modal": {
         "okey": "Tamam",
         "error": {
@@ -25,6 +29,10 @@
             "label": "E-posta Adresin",
             "placeholder": "E-postanı buraya bırak..."
         },
+        "password": {
+            "label": "Şifren",
+            "placeholder": "Şifreni buraya bırak..."
+        },
         "message": {
             "label": "Mesajın",
             "placeholder": "Bana duymam gerektiğini düşündüğün her şeyi söyle..."
@@ -36,7 +44,8 @@
         "post_success_message": "Gönderi başarıyla oluşturuldu!"
     },
     "custom_error_messages": {
-        "create_post_error_message": "Gönderi içeriği formatında sorun var. Lütfen kontrol ediniz!"
+        "create_post_error_message": "Gönderi içeriği formatında sorun var. Lütfen kontrol edin!",
+        "login_error_message": "Yanlış e-posta adresi veya şifre! Lütfen kontrol edin!"
     },
     "pagination": {
         "next": "İleri",
@@ -96,5 +105,9 @@
         "post_content": "Gönderi İçeriği",
         "enter_post_content": "Gönderi içeriği girin...",
         "create": "Oluştur"
+    },
+    "admin_login": {
+        "title": "Admin Girişi",
+        "login": "Giriş Yap"
     }
 }
