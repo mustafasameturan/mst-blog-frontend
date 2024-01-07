@@ -29,7 +29,7 @@ export default function Posts() {
             {t("top_posts.my_posts")}
         </h3>
         <a
-          href="/blog"
+          href="/ui/blog"
           className="flex items-center pl-10 font-body italic text-green transition-colors hover:text-secondary dark:text-green-light dark:hover:text-secondary"
         >
             {t("top_posts.all_posts")}

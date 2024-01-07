@@ -44,6 +44,9 @@ dependencies:
   i18next-http-backend:
     specifier: ^2.2.2
     version: 2.2.2
+  ko-basic-cookie:
+    specifier: ^1.0.0
+    version: 1.0.0
   prop-types:
     specifier: ^15.8.1
     version: 15.8.1
@@ -80,12 +83,6 @@ dependencies:
   react-syntax-highlighter:
     specifier: ^15.5.0
     version: 15.5.0(react@18.2.0)
-  timezone:
-    specifier: link:dayjs/plugin/timezone
-    version: link:dayjs/plugin/timezone
-  utc@:
-    specifier: link:dayjs/plugin/utc@
-    version: link:dayjs/plugin/utc@
   yup:
     specifier: ^1.2.0
     version: 1.2.0
@@ -2767,6 +2764,10 @@ packages:
       object.assign: 4.1.4
       object.values: 1.1.6
     dev: true
+
+  /ko-basic-cookie@1.0.0:
+    resolution: {integrity: sha512-j3XYUu2bsLKn2u6ynJulqdCG/a+C3aiaRoBE32BlG4utkkHURvwXBKqmYqTmQ4/P+k1WdOoxDddN4/TiyZxWDQ==}
+    dev: false
 
   /levn@0.4.1:
     resolution: {integrity: sha512-+bT2uH4E5LGE7h/n3evcS/sQlJXCpIp6ym8OWJ5eV6+67Dsql/LaaT7qJBAt2rzfoa/5QBGBhxDix1dMt2kQKQ==}

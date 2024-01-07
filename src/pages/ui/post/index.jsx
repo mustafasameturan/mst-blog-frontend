@@ -1,7 +1,7 @@
-import Blockquote from "~/pages/post/components/blokquote/index.jsx";
-import Paragraph from "~/pages/post/components/paragraph/index.jsx";
-import Header from "~/pages/post/components/header/index.jsx";
-import CodeBlock from "~/pages/post/components/code-block/index.jsx";
+import Blockquote from "~/pages/ui/post/components/blokquote/index.jsx";
+import Paragraph from "~/pages/ui/post/components/paragraph/index.jsx";
+import Header from "~/pages/ui/post/components/header/index.jsx";
+import CodeBlock from "~/pages/ui/post/components/code-block/index.jsx";
 import {useEffect, useState} from "react";
 import {GetPostByPostId} from "~/services/ui/post-service.js";
 import {useParams} from "react-router-dom";

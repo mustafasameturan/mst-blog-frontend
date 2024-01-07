@@ -23,6 +23,7 @@
     "i18next": "^23.5.1",
     "i18next-browser-languagedetector": "^7.1.0",
     "i18next-http-backend": "^2.2.2",
+    "ko-basic-cookie": "^1.0.0",
     "prop-types": "^15.8.1",
     "react": "^18.2.0",
     "react-copy-to-clipboard": "^5.1.0",
@@ -35,8 +36,6 @@
     "react-router-dom": "^6.14.1",
     "react-select": "^5.8.0",
     "react-syntax-highlighter": "^15.5.0",
-    "timezone": "link:dayjs/plugin/timezone",
-    "utc@": "link:dayjs/plugin/utc@",
     "yup": "^1.2.0"
   },
   "devDependencies": {

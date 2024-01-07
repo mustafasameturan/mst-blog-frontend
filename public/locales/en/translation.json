@@ -5,6 +5,10 @@
         "uses": "Uses",
         "contact": "Contact"
     },
+    "navbar_admin": {
+        "login": "Login",
+        "create_post": "Create Post"
+    },
     "pagination": {
         "next": "Next",
         "back": "Back"
@@ -29,6 +33,10 @@
             "label": "Your Email",
             "placeholder": "Drop that email here..."
         },
+        "password": {
+            "label": "Your Password",
+            "placeholder": "Drop that password here..."
+        },
         "message": {
             "label": "Your Message",
             "placeholder": "Tell me all the things that you think I need to hear..."
@@ -40,7 +48,8 @@
         "post_success_message": "Post created successfully!"
     },
     "custom_error_messages": {
-        "create_post_error_message": "There is a problem with post content format. Please check it!"
+        "create_post_error_message": "There is a problem with post content format. Please check it!",
+        "login_error_message": "Incorrect email address or password! Please check it!"
     },
     "home": {
         "title": "Hi, I'm Mustafa Samet",
@@ -96,5 +105,9 @@
         "post_content": "Post Content",
         "enter_post_content": "Enter post content...",
         "create": "Create"
+    },
+    "admin_login": {
+        "title": "Admin Login",
+        "login": "Login"
     }
 }

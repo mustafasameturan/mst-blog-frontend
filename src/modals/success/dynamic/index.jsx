@@ -12,8 +12,8 @@ export default function DynamicSuccessModal({ destroy, modalData }){
             <ModalTitle
                 title={t("modal.success.title")}
             />
-            <div className="h-[200px] min-w-[500px] flex items-center justify-center flex-col gap-10">
-                <p className="max-w-[400px] text-primary dark:text-white text-center">{modalData}</p>
+            <div className="h-[200px] min-w-[500px] flex flex-col items-center mt-12">
+                <p className="max-w-[400px] h-[72px] text-primary dark:text-white text-center">{modalData}</p>
                 <Button
                     variant="primary-small"
                     type="submit"
