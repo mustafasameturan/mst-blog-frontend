@@ -11,6 +11,7 @@ export default function Apperance(){
     const theme = useTheme();
     const { colorScheme } = useColorScheme();
     const language = useLanguage();
+    console.log(language)
 
     useEffect(() => {
       if(theme === 'default'){
@@ -27,9 +28,9 @@ export default function Apperance(){
                 "bx cursor-pointer text-3xl text-primary dark:text-white transition-all duration-500", getApperanceIcon(theme, colorScheme)
                 )}
                 onClick={() => {
-                theme === apperance.light
-                    ? setTheme(apperance.dark)
-                    : setTheme(apperance.light)
+                    theme === apperance.light
+                        ? setTheme(apperance.dark)
+                        : setTheme(apperance.light)
                 }}
             >
             </i>

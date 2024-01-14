@@ -18,9 +18,7 @@ export default function WebLayout() {
             <Sidebar ref={mobileMenuRef} />
             <SidebarMobile ref={mobileMenuRef} />
             {modals.length > 0 && <Modals />}
-            <div className="min-h-screen">
-                <Outlet />
-            </div>
+            <Outlet />
             <Footer />
         </div>
     )
