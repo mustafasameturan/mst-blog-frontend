@@ -21,7 +21,7 @@ export const getApperanceIcon = (key, colorScheme = false )=> {
             if(colorScheme === 'light'){
                 return 'bxs-sun'
             } else {
-                return 'bxs-moon'
+                return 'bx-moon'
             }            
         case 'light': 
             return 'bxs-sun'

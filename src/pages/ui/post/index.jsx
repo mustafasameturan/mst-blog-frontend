@@ -14,6 +14,7 @@ import {formatSeconds} from "~/utils/duration.js";
 import {useTranslation} from "react-i18next";
 import {getColorByPostCategory} from "~/utils/consts/functions.js";
 import SharePopup from "~/pages/ui/post/components/share-popup/index.jsx";
+import {Helmet} from "react-helmet";
 
 export default function Post() {
 
@@ -86,6 +87,9 @@ export default function Post() {
 
     return (<>
         <div className="container mx-auto">
+            <Helmet>
+                <title>{postData?.title}</title>
+            </Helmet>
             <div className="pt-16 lg:pt-20">
                 {loading && <Loading />}
 
