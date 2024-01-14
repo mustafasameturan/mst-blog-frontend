@@ -59,7 +59,6 @@
     "top_posts": {
         "my_posts": "Gönderilerim",
         "all_posts": "Tüm gönderiler",
-        "min_read": "dakika okuma",
         "not_found": "Hiç Gönderi Bulunamadı"
     },
     "projects": {
@@ -74,7 +73,15 @@
     "blog": {
         "title": "/blog",
         "description": "Makaleler, eğitimler ve daha fazlası.\n Gelişmelerden haberdar olmak için abone olun!",
-        "subscribe": "Abone Olun"
+        "subscribe": "Abone Olun",
+        "read": "okuma"
+    },
+    "share_popup": {
+        "share": "Paylaş!",
+        "copy_link": "Linki kopyala",
+        "share_on_whatsapp": "Whatsapp'ta paylaş",
+        "share_on_x": "X'te paylaş",
+        "share_on_linkedin": "LinkedIn'de paylaş"
     },
     "uses": {
         "title": "/kullandıklarım",

@@ -6,6 +6,10 @@ import {useTranslation} from "react-i18next";
 import {navbarAdminLoginMenu, navbarAdminMenu, navbarMenu} from "~/utils/consts/navbar.js";
 import NavbarItem from "~/layouts/web/components/navbar/components/navbar-item/index.jsx";
 import {useToken} from "~/stores/auth/hooks.js";
+import classNames from "classnames";
+import {apperance, getApperanceIcon} from "~/utils/consts/apperance.js";
+import {setTheme} from "~/stores/app/actions.js";
+import {adminLogout} from "~/stores/auth/actions.js";
 
 // eslint-disable-next-line react/display-name
 const Navbar = forwardRef((props, ref) => {
@@ -44,6 +48,11 @@ const Navbar = forwardRef((props, ref) => {
                   </ul>
                   <div className="flex items-center gap-x-2">
                       <Apperance/>
+                      <button
+                          className="bx bx-exit cursor-pointer text-3xl text-primary dark:text-white transition-all duration-500"
+                          onClick={adminLogout}
+                      >
+                      </button>
                   </div>
               </div>
           </div>
