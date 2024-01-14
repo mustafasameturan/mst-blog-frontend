@@ -59,7 +59,6 @@
     "top_posts": {
         "my_posts": "My Posts",
         "all_posts": "All posts",
-        "min_read": "min read",
         "not_found": "No Posts Found"
     },
     "projects": {
@@ -74,7 +73,15 @@
     "blog": {
         "title": "/blog",
         "description": "Articles, tutorials and everything else.\n Subscribe for updates as they happen!",
-        "subscribe": "Subscribe"
+        "subscribe": "Subscribe",
+        "read": "read"
+    },
+    "share_popup": {
+        "share": "Share!",
+        "copy_link": "Copy link",
+        "share_on_whatsapp": "Share on Whatsapp",
+        "share_on_x": "Share on X",
+        "share_on_linkedin": "Share on LinkedIn"
     },
     "uses": {
         "title": "/uses",
@@ -91,7 +98,7 @@
         "mouse_description": "I click with the Logitech M720 Triathlon."
     },
     "contact": {
-        "title": "/iletişim",
+        "title": "/contact",
         "description": "Got a question or proposal, or just want to say hello? Go ahead. You know what to do.",
         "send_message": "Send Message"
     },

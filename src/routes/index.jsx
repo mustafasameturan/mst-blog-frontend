@@ -36,7 +36,7 @@ const routes = createBrowserRouter([
                 element: <Contact />
             },
             {
-                path: 'post/:postId',
+                path: '/:link',
                 element: <Post />
             }
         ]

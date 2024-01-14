@@ -16,9 +16,17 @@ export const GetAllPosts = async (model) => {
     return ApiRequest(url, method, payload);
 }
 
-export const GetPostByPostId = async (postId) => {
-    const url = `/posts/getPostById/${postId}`;
+export const GetPostByPostLink = async (postLink) => {
+    const url = `/posts/getPostByLink/${postLink}`;
     const method = RequestMethods.GET;
 
     return ApiRequest(url, method);
+}
+
+export const UpdateReadTime = async (model) => {
+    const url = '/posts/updateReadTime/';
+    const method = RequestMethods.PUT;
+    const payload = { ...model };
+
+    return ApiRequest(url, method, payload);
 }

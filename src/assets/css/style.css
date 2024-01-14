@@ -57,6 +57,10 @@ body.dark {
   @apply !bg-primary !border-secondary !text-secondary
 }
 
+.tooltip-top {
+  @apply absolute min-w-max bottom-9 scale-0 transition-all rounded bg-secondary dark:bg-white p-2 text-xs text-white dark:text-primary group-hover:scale-100
+}
+
 .code-container {
   position: relative;
   display: inline-block;
