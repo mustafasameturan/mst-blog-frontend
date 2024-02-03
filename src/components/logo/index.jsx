@@ -8,7 +8,7 @@ export default function StaticLogo() {
     const navigate = useNavigate();
 
     const handleClick = () => {
-        analytics.useAnalytics("screen_view", {page: "samet"})
+        analytics.useAnalytics(Events.LOGO_CLICKED);
         navigate("/");
     }
 

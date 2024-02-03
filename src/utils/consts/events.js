@@ -1,7 +1,7 @@
 export const Events = Object.freeze(
     {
         //Layout
-        "LOGO_CLICKED": "clicked",
+        "LOGO_CLICKED": "logo_clicked",
         "LANGUAGE_CHANGED": "language_changed",
         "SITE_COLOR_CHANGED": "site_color_changed",
         //Footer
@@ -9,6 +9,7 @@ export const Events = Object.freeze(
         "GITHUB_BUTTON_CLICKED": "github_button_clicked",
         //Home
         "SAY_HI_CLICKED": "say_hi_clicked",
+        "ALL_POST_CLICKED": "all_post_clicked",
         "PROJECT_CLICKED": "project_clicked",
         //Blog
         "SUBSCRIBE_CLICKED": "subscribe_clicked",

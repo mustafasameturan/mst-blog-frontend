@@ -2,7 +2,7 @@ import PropTypes from "prop-types";
 import Button from "~/components/button/index.jsx";
 import classNames from "classnames";
 
-export default function UsesListItem({ title, children, classnames, url }) {
+export default function UsesListItem({ title, children, classnames, url, action }) {
     return(
         <li
             className={classNames("font-body text-lg font-light text-primary dark:text-white pt-4", {
@@ -15,6 +15,7 @@ export default function UsesListItem({ title, children, classnames, url }) {
                     variant="text"
                     href={url}
                     target="_blank"
+                    onClick={action}
                 >
                     {title}:
                 </Button>

@@ -5,12 +5,30 @@ import {setLanguage, setTheme} from "~/stores/app/actions";
 import {useLanguage, useTheme} from "~/stores/app/hooks";
 import {apperance, getApperanceIcon, getLanguageIcon, getLanguageKey} from "~/utils/consts/apperance";
 import {i18n} from "~/utils/language.js";
+import useAnalytics from "~/hooks/log/use-analytics.js";
+import {Events} from "~/utils/consts/events.js";
 
 export default function Apperance(){
 
     const theme = useTheme();
     const { colorScheme } = useColorScheme();
     const language = useLanguage();
+    const analytics = useAnalytics();
+
+    const handleChangeColor = () => {
+        theme === apperance.light
+            ? setTheme(apperance.dark)
+            : setTheme(apperance.light);
+
+        analytics.useAnalytics(Events.SITE_COLOR_CHANGED);
+    }
+
+    const handleChangeLanguage = () => {
+        setLanguage(getLanguageKey(i18n.language));
+        i18n.changeLanguage(getLanguageKey(i18n.language));
+
+        analytics.useAnalytics(Events.LANGUAGE_CHANGED);
+    }
 
     useEffect(() => {
       if(theme === 'default'){
@@ -26,11 +44,7 @@ export default function Apperance(){
                 className={classNames(
                 "bx cursor-pointer text-3xl text-primary dark:text-white transition-all duration-500", getApperanceIcon(theme, colorScheme)
                 )}
-                onClick={() => {
-                    theme === apperance.light
-                        ? setTheme(apperance.dark)
-                        : setTheme(apperance.light)
-                }}
+                onClick={handleChangeColor}
             >
             </i>
             <img
@@ -38,10 +52,7 @@ export default function Apperance(){
                 src={getLanguageIcon(language)}
                 width={30}
                 height={30}
-                onClick={() => {
-                    setLanguage(getLanguageKey(i18n.language));
-                    i18n.changeLanguage(getLanguageKey(i18n.language));
-                }}
+                onClick={handleChangeLanguage}
                 alt="flag"
             />
         </div>

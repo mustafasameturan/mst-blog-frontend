@@ -2,11 +2,14 @@ import {Popover} from "@headlessui/react";
 import {useTranslation} from "react-i18next";
 import {useParams} from "react-router-dom";
 import PropTypes from "prop-types";
+import useAnalytics from "~/hooks/log/use-analytics.js";
+import {Events} from "~/utils/consts/events.js";
 
 export default function SharePopup({ postInformation }) {
 
-    const { t } = useTranslation();
     const { link } = useParams();
+    const { t } = useTranslation();
+    const analytics = useAnalytics();
 
     const postLink = `${import.meta.env.VITE_SITE_LINK}${link}`
     const postText = postInformation.title + " by " + postInformation.author + " " + postLink;
@@ -18,23 +21,29 @@ export default function SharePopup({ postInformation }) {
     }
 
     const shareOnX = () => {
+        analytics.useAnalytics(Events.SHARE_ON_X_CLICKED);
+
         const shareLink = `https://twitter.com/intent/tweet?text=${postText}`;
         window.open(shareLink, "_blank");
     }
 
     const shareOnLinkedIn = () => {
+        analytics.useAnalytics(Events.SHARE_ON_LINKEDIN_CLICKED);
+
         const shareLink = `https://www.linkedin.com/sharing/share-offsite/?url=${postLink}`;
         window.open(shareLink, "_blank");
     }
 
     const shareOnWhatsapp = () => {
+        analytics.useAnalytics(Events.SHARE_ON_WHATSAPP_CLICKED);
+
         const shareLink = `https://api.whatsapp.com/send?text=${postText}`;
         window.open(shareLink, "_blank");
     }
 
     return(
         <Popover className="relative">
-            <Popover.Button className="py-[3px] block group outline-none">
+            <Popover.Button className="py-[3px] block group outline-none" onClick={() => analytics.useAnalytics(Events.SHARE_BUTTON_CLICKED)}>
                 <span className="pl-2 material-symbols-outlined font-light text-primary dark:text-white text-[22px] mb-1 cursor-pointer">
                     ios_share
                 </span>

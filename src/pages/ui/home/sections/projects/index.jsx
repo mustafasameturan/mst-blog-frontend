@@ -3,10 +3,14 @@ import {useEffect, useState} from "react";
 import {useTranslation} from "react-i18next";
 import Loading from "~/components/loading/index.jsx";
 import NotFound from "~/components/not-found/index.jsx";
+import useAnalytics from "~/hooks/log/use-analytics.js";
+import {Events} from "~/utils/consts/events.js";
 
 export default function Projects() {
 
   const { t } = useTranslation();
+  const analytics = useAnalytics();
+
   const [projects, setProjects] = useState([]);
   const [loading, setLoading] = useState(true);
 
@@ -38,6 +42,7 @@ export default function Projects() {
                           <a
                               key={index}
                               href={project.url}
+                              onClick={() => analytics.useAnalytics(Events.PROJECT_CLICKED, { project_url: project.url })}
                               className="mb-6 flex items-center justify-between border border-grey-lighter px-4 py-4 sm:px-6"
                               target="_blank"
                               rel="noreferrer"

@@ -10,7 +10,6 @@ export default function useAnalytics(){
 
     const useAnalytics = (event, param) => {
         logEvent(analytics, event, param);
-        console.log(event, param)
     };
 
     return { useAnalytics };

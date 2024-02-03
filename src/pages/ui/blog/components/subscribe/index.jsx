@@ -6,12 +6,17 @@ import Button from "~/components/button/index.jsx";
 import {AddSubscribe} from "~/services/ui/subscribe-service.js";
 import {modal} from "~/stores/modal/actions.js";
 import Loading from "~/components/loading/index.jsx";
+import useAnalytics from "~/hooks/log/use-analytics.js";
+import {Events} from "~/utils/consts/events.js";
 
 export default function Subscribe() {
 
     const { t } = useTranslation();
+    const analytics = useAnalytics();
 
     const submitHandle = async (values, { resetForm, setSubmitting }) => {
+
+        analytics.useAnalytics(Events.SUBSCRIBE_CLICKED);
 
         const result = await AddSubscribe(values.email);
 
