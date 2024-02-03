@@ -5,11 +5,13 @@ import {Outlet, ScrollRestoration} from "react-router-dom";
 import Footer from "~/layouts/web/components/footer/index.jsx";
 import {useModals} from "~/stores/modal/hooks.js";
 import Modals from "~/modals/index.jsx";
+import useScreenView from "~/hooks/log/use-screen-view.js";
 
 export default function WebLayout() {
 
     const mobileMenuRef = useRef();
     const modals = useModals();
+    useScreenView();
 
     return(
         <div id="main">
