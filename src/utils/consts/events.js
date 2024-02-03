@@ -1,6 +1,7 @@
 export const Events = Object.freeze(
     {
         //Layout
+        "SCREEN_VIEW": "screen_view",
         "LOGO_CLICKED": "logo_clicked",
         "LANGUAGE_CHANGED": "language_changed",
         "SITE_COLOR_CHANGED": "site_color_changed",
