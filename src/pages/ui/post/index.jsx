@@ -15,6 +15,7 @@ import {useTranslation} from "react-i18next";
 import {getColorByPostCategory} from "~/utils/consts/functions.js";
 import SharePopup from "~/pages/ui/post/components/share-popup/index.jsx";
 import {Helmet} from "react-helmet";
+import Photograph from "~/pages/ui/post/components/photograph/index.jsx";
 
 export default function Post() {
 
@@ -38,6 +39,9 @@ export default function Post() {
         }
         if (item.contentType === PostContentTypes.CODE) {
           return <CodeBlock codeString={item.content} language="javascript" />;
+        }
+        if (item.contentType === PostContentTypes.PHOTO) {
+            return <Photograph src={item.content} />;
         }
         return null;
     }
@@ -150,7 +154,6 @@ export default function Post() {
                                     {content(item)}
                                 </div>
                             ))}
-                            {/*<img src={Post_Image} alt="Image" className="mb-4"/>*/}
                         </div>
                     </>
                 )}
