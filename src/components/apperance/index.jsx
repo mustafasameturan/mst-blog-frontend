@@ -11,7 +11,6 @@ export default function Apperance(){
     const theme = useTheme();
     const { colorScheme } = useColorScheme();
     const language = useLanguage();
-    console.log(language)
 
     useEffect(() => {
       if(theme === 'default'){

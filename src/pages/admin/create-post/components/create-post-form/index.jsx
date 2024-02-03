@@ -9,12 +9,14 @@ import {AddPost} from "~/services/admin/post-service.js";
 import usePostContentTypes from "~/hooks/data/use-post-content-types.js";
 import {useTranslation} from "react-i18next";
 import {modal} from "~/stores/modal/actions.js";
+import useAdminAuth from "~/hooks/auth/use-admin-auth.js";
 
 export default function CreatePostForm() {
 
     const { t } = useTranslation();
     const postCategoryTypes = usePostCategoryTypes();
     const postContentTypes = usePostContentTypes();
+    const { admin} = useAdminAuth();
 
     /*
         Gönderi içeriğini endpoint'e göre parse eder.
@@ -55,7 +57,7 @@ export default function CreatePostForm() {
         if(postContents.length > 0) {
             let model = {
                 title: values.title,
-                userId: "d3aa76f5-8d85-46be-911d-56d35a1a5bb9",
+                userId: admin.userId,
                 postCategories: values.category.map(category => category.id),
                 postContents: parseContent(values.content)
             }
