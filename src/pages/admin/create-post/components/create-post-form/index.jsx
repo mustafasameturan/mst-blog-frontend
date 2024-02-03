@@ -18,6 +18,8 @@ export default function CreatePostForm() {
     const postContentTypes = usePostContentTypes();
     const { admin} = useAdminAuth();
 
+    console.log(admin);
+
     /*
         Gönderi içeriğini endpoint'e göre parse eder.
     */
@@ -57,7 +59,7 @@ export default function CreatePostForm() {
         if(postContents.length > 0) {
             let model = {
                 title: values.title,
-                userId: admin.userId,
+                userId: admin.UserId,
                 postCategories: values.category.map(category => category.id),
                 postContents: parseContent(values.content)
             }
