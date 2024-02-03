@@ -13,6 +13,7 @@ export const PostContentTypes = Object.freeze(
         "PARAGRAPH" : 2,
         "BLOCKQUOTE" : 3,
         "CARD" : 4,
-        "CODE" : 5
+        "CODE" : 5,
+        "PHOTO": 6
     }
 )
