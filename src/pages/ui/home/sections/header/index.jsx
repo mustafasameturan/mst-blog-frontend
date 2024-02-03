@@ -9,14 +9,12 @@ export default function Header() {
 
   return (
     <div className="border-b border-grey-lighter py-16 lg:py-20">
-      <div>
-        <img
-            src="/img/me.png"
-            className="h-16 w-16 rounded-full"
-            alt="author"
-            width={256} height={256}
-        />
-      </div>
+      <img
+          src="/img/me.png"
+          className="h-16 w-16 rounded-full"
+          alt="author"
+          width={256} height={256}
+      />
       <h1 className="pt-3 font-body text-3xl font-semibold text-primary dark:text-white md:text-4xl lg:text-5xl">
           {t('home.title')}.
       </h1>

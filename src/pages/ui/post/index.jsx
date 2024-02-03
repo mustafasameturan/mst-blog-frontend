@@ -42,7 +42,6 @@ export default function Post() {
         return null;
     }
 
-
     //Kullanıcının sayfada duruş süresi hesaplanıyor.
     useEffect(() => {
         const startTime = new Date().getTime();
@@ -107,26 +106,41 @@ export default function Post() {
                             <h2 className="block font-body text-3xl font-semibold leading-tight text-primary dark:text-white sm:text-4xl md:text-5xl">
                                 {postData?.title}
                             </h2>
-                            <div className="flex flex-col sm:flex-row gap-1 sm:gap-0 sm:items-center pt-5 sm:pt-8">
-                                <p className="pr-2 font-body font-light text-primary dark:text-white min-w-max">
-                                    {formatDate(postData?.createdDate, language, 'MMMM DD, YYYY')}
-                                </p>
-                                {/* eslint-disable-next-line react/jsx-no-comment-textnodes */}
-                                <span className="vdark:text-white font-body text-grey sm:block hidden">//</span>
-
-                                <p className="pl-0 pr-0 sm:pr-2 sm:pl-2 font-body font-light text-primary dark:text-white min-w-max">
-                                    {formatSeconds(postData?.readTime, language, t("blog.read"))}
-                                </p>
-                                {/* eslint-disable-next-line react/jsx-no-comment-textnodes */}
-                                <span className="vdark:text-white font-body text-grey sm:block hidden">//</span>
-
-                                <div className="group relative">
-                                    <span className="tooltip-top -right-5 hidden sm:block">{t("share_popup.share")}</span>
-                                    <SharePopup
-                                        postInformation={{title: postData.title, author: postData.userInformations.fullName}}
+                            <div className="flex flex-col gap-2 pt-5 sm:pt-8">
+                                <div className="flex gap-2 items-center justify-start">
+                                    <img
+                                        src="/img/me.png"
+                                        className="h-10 w-10 rounded-full"
+                                        alt="author"
+                                        width={256} height={256}
                                     />
+                                    <p className="font-light text-primary dark:text-white">{postData?.userInformations.fullName}</p>
                                 </div>
+                                <div className="flex flex-col sm:flex-row gap-1 sm:gap-0 sm:items-center">
+                                <p className="pr-2 font-body font-light text-primary dark:text-white min-w-max">
+                                        {formatDate(postData?.createdDate, language, 'MMMM DD, YYYY')}
+                                    </p>
+                                    {/* eslint-disable-next-line react/jsx-no-comment-textnodes */}
+                                    <span className="vdark:text-white font-body text-grey sm:block hidden">//</span>
 
+                                    <p className="pl-0 pr-0 sm:pr-2 sm:pl-2 font-body font-light text-primary dark:text-white min-w-max">
+                                        {formatSeconds(postData?.readTime, language, t("blog.read"))}
+                                    </p>
+                                    {/* eslint-disable-next-line react/jsx-no-comment-textnodes */}
+                                    <span className="vdark:text-white font-body text-grey sm:block hidden">//</span>
+
+                                    <div className="group relative">
+                                        <span
+                                            className="tooltip-top -right-5 hidden sm:block">{t("share_popup.share")}</span>
+                                        <SharePopup
+                                            postInformation={{
+                                                title: postData.title,
+                                                author: postData.userInformations.fullName
+                                            }}
+                                        />
+                                    </div>
+
+                                </div>
                             </div>
                         </div>
 
