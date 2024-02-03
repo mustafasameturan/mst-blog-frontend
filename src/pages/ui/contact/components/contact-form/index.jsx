@@ -6,13 +6,19 @@ import {contactSchema} from "~/validations/index.js";
 import {AddContact} from "~/services/ui/contact-service.js";
 import {modal} from "~/stores/modal/actions.js";
 import Loading from "~/components/loading/index.jsx";
+import useAnalytics from "~/hooks/log/use-analytics.js";
+import {Events} from "~/utils/consts/events.js";
 
 export default function ContactForm() {
 
     const { t } = useTranslation();
+    const analytics = useAnalytics();
 
     const submitHandle = async (values, { resetForm, setSubmitting }) => {
-        let result = await AddContact(values);
+
+        analytics.useAnalytics(Events.SEND_MESSAGE_BUTTON_CLICKED);
+
+        const result = await AddContact(values);
 
         if(result.statusCode === 200) {
             modal.append("success.dynamic", t("custom_success_messages.contact_success_message"));

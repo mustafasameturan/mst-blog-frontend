@@ -1,11 +1,19 @@
 import {useTranslation} from "react-i18next";
 import Button from "~/components/button/index.jsx";
 import {useNavigate} from "react-router-dom";
+import useAnalytics from "~/hooks/log/use-analytics.js";
+import {Events} from "~/utils/consts/events.js";
 
 export default function Header() {
 
   const { t } = useTranslation();
   const navigate = useNavigate();
+  const analytics = useAnalytics();
+
+  const handleSayHi = () => {
+      navigate("/contact");
+      analytics.useAnalytics(Events.SAY_HI_CLICKED);
+  }
 
   return (
     <div className="border-b border-grey-lighter py-16 lg:py-20">
@@ -24,7 +32,7 @@ export default function Header() {
       <Button
         as="button"
         variant="primary"
-        onClick={() => navigate("/contact")}
+        onClick={handleSayHi}
       >
           {t('home.button')}
       </Button>

@@ -4,13 +4,23 @@ import {GetTopPosts} from "~/services/ui/post-service.js";
 import Loading from "~/components/loading/index.jsx";
 import {useTranslation} from "react-i18next";
 import NotFound from "~/components/not-found/index.jsx";
-import {Link} from "react-router-dom";
+import {Link, useNavigate} from "react-router-dom";
+import useAnalytics from "~/hooks/log/use-analytics.js";
+import {Events} from "~/utils/consts/events.js";
 
 export default function Posts() {
 
   const {t} = useTranslation();
+  const analytics = useAnalytics();
+  const navigate = useNavigate();
+
   const [topPosts, setTopPosts] = useState([]);
   const [loading, setLoading] = useState(true);
+
+  const handleAllPosts = () => {
+      analytics.useAnalytics(Events.ALL_POST_CLICKED);
+      navigate("/blog");
+  }
 
   useEffect(() => {
       GetTopPosts()
@@ -29,13 +39,14 @@ export default function Posts() {
         <h3 className="ml-3 font-body text-2xl font-semibold text-primary dark:text-white">
             {t("top_posts.my_posts")}
         </h3>
-        <Link
-          to="/blog"
+        <button
+          type="button"
           className="flex items-center pl-10 font-body italic text-green transition-colors hover:text-secondary dark:text-green-light dark:hover:text-secondary"
+          onClick={handleAllPosts}
         >
             {t("top_posts.all_posts")}
           <img src="/svg/arrow-right.svg" className="ml-3" alt="arrow right" width={16} height={10} />
-        </Link>
+        </button>
       </div>
 
       {loading && <Loading />}
